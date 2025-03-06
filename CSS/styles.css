@@ -1,0 +1,374 @@
+/* General Styling */
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.promo{
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    position: relative;
+    box-shadow: 7px 6px 10px 6px  rgb(182, 179, 179);
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    
+}
+h1 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    background-color: #000000;
+    justify-content: space-between; 
+    border-radius: 5px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: #333;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 230px;
+    margin-left: auto; /* Pushes search bar to the right */
+}
+
+.search-bar input {
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.search-bar button:hover {
+    color: gray;
+}
+
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    color: rgb(250, 247, 247);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: gray;
+}
+
+/* Categories & Featured Products */
+.categories, .featured-products {
+    text-align: center;
+    padding: 40px;
+}
+.categories{
+    text-decoration: none;
+}
+.category{
+    text-decoration: none;
+}
+
+.category-container, .product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.category img, .product-card img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover, .product-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Add to Bag Button */
+.add-to-bag {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.add-to-bag:hover {
+    background: rgb(148, 143, 143);
+}
+
+/* ICONS */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.country-selector img {
+    width: 30px;
+    height: 20px;
+}
+
+i {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255); /* Add this line to make icons white */
+}
+
+/* Prevent Horizontal Scroll */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Authentication Container */
+.auth-container {
+    background: #f9f9f9; /* Light background for form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-box {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light border */
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid gray; /* Slight highlight on focus */
+    outline: none;
+}
+
+/* Authentication Button */
+.auth-container {
+    background: #f9f9f9; /* Light background for form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    /* Centering */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.auth-button {
+    width: 100%;
+    background: black; /* Matches homepage buttons */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+
+}
+
+
+.auth-button:hover {
+    background: gray; /* Hover effect */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+p a {
+    color: black; /* Updated to be visible */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: gray;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: gray;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+.featured-products{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.featured-products h2{
+    font-size: 30px;
+}
+.product-container{
+    color: #000000;
+}

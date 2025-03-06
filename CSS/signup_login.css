@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: white; /* Changed to match homepage */
+    color: black; /* Text color updated for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black; /* Ensure logo text is visible */
+}
+
+/* Authentication Container */
+.auth-container {
+    background: #f9f9f9; /* Light background for form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-box {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light border */
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid gray; /* Slight highlight on focus */
+    outline: none;
+}
+
+/* Authentication Button */
+.auth-button {
+    width: 100%;
+    background: black; /* Matches homepage buttons */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.auth-button:hover {
+    background: gray; /* Hover effect */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+p a {
+    color: black; /* Updated to be visible */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: gray;
+}
