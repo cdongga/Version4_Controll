@@ -58,12 +58,10 @@
         <div class="banner">
         <img src="IMG/skincare_banner1.jpg" alt="Skincare Products" class="banner-image">
         <div class="text">
-        <p>
-          A well-maintained skincare routine is a major part of a healthy lifestyle. Build your skincare routine with the best skin care products that Shopaholics has to offer, ranging from face care, eye care, to body care and skin care product sets.  </p>
+       
         </div>
         </div>
-    
-            <hr>
+            
     <!-- PRODUCT CONTAINER -->
     <div class="product-container">
     <?php

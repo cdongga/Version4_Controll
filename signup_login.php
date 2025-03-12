@@ -137,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["signup"])) {
             <?php if (!empty($signup_error)) echo "<p class='error'>$signup_error</p>"; ?>
             <?php if (!empty($signup_success)) echo "<p class='success'>$signup_success</p>"; ?>
             <form action="" method="POST">
-                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <input type="date" name="dob" required>
